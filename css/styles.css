@@ -9,18 +9,18 @@
 /* FONTS */
 @font-face {
     font-family: 'Public Sans';
-    src: url('../fonts/PublicSans-Regular.woff2') format('woff2'),
-        url('../fonts/PublicSans-Regular.woff') format('woff');
-    font-weight: normal;
+    src: url('../fonts/PublicSans-Thin.woff2') format('woff2'),
+        url('../fonts/PublicSans-Thin.woff') format('woff');
+    font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Public Sans';
-    src: url('../fonts/PublicSans-Thin.woff2') format('woff2'),
-        url('../fonts/PublicSans-Thin.woff') format('woff');
-    font-weight: 100;
+    src: url('../fonts/PublicSans-Regular.woff2') format('woff2'),
+        url('../fonts/PublicSans-Regular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -138,8 +138,9 @@ select:-webkit-autofill:focus {
 
 /* SITE-HEADER */
 .site-header {
-    padding-top: 18px;
-    padding-bottom: 18px;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
 }
 
 .site-header__container {
@@ -202,4 +203,52 @@ select:-webkit-autofill:focus {
 
 .sitenav__link:hover::after {
     opacity: 1;
+}
+
+
+/* HERO */
+.hero {
+    background-image: url(../img/hero-bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: calc(50% + 595px) calc(50% + -88px);
+    background-color: #fafafa;
+}
+
+.hero__container {
+    display: flex;
+    position: relative;
+}
+
+.hero__info {
+    width: 100%;
+    max-width: 447px;
+    padding-top: 170px;
+    padding-bottom: 266px;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-weight: 100;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: var(--title-color);
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 36px;
+    color: var(--text-color);
+    letter-spacing: -0.28125px;
+}
+
+.hero__img {
+    position: absolute;
+    top: -138px;
+    left: calc(50% + 75px);
+    width: 780px;
+    height: 960px;
+    flex-shrink: 0;
+    object-fit: contain;
 }
