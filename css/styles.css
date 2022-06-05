@@ -3,36 +3,39 @@
     --text-color:#9597a5;
     --title-color:#2d314d;
     --blou-color:#30c88f;
+    --information-color:#F4F5F7;
 }
 
 
 /* FONTS */
 @font-face {
-    font-family: 'Public Sans';
-    src: url('../fonts/PublicSans-Thin.woff2') format('woff2'),
-        url('../fonts/PublicSans-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Public Sans';
-    src: url('../fonts/PublicSans-Regular.woff2') format('woff2'),
-        url('../fonts/PublicSans-Regular.woff') format('woff');
+    font-family: "Public Sans";
+    src: url("../fonts/") format("woff2"),
+        url("../fonts/PublicSans-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Public Sans';
-    src: url('../fonts/PublicSans-Medium.woff2') format('woff2'),
-        url('../fonts/PublicSans-Medium.woff') format('woff');
+    font-family: "Public Sans";
+    src: url("../fonts/PublicSans-Medium.woff2") format("woff2"),
+        url("../fonts/PublicSans-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: "Public Sans";
+    src: url("../fonts/PublicSans-Thin.woff2") format("woff2"),
+        url("../fonts/PublicSans-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 
 
@@ -55,9 +58,9 @@ body{
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    font-family:"PublicSans", "Arial",sans-serif;
+    font-family: "Public Sans", "Arial" , sans-serif;
     background-color: #fff;
-    color: #222;
+    color: var(--text-color);
 }
 
 img{
@@ -118,7 +121,17 @@ select:-webkit-autofill:focus {
     border-radius: 22px;
     word-spacing: nowrap;
     background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    transition: opacity .3s ease;
 }
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
 
 /* CONTAINER */
 .container{
@@ -160,6 +173,15 @@ select:-webkit-autofill:focus {
     width: 139px;
     height: 20px;
     object-fit: contain;
+    transition: opacity .3s ease;
+}
+
+.site-header__logo:hover {
+    opacity: 0.8;
+}
+
+.site-header__logo:active {
+    opacity: 0.6;
 }
 
 .sitenav__list {
@@ -182,8 +204,8 @@ select:-webkit-autofill:focus {
     justify-content: center;
     flex-direction: column;
     word-spacing: nowrap;
-    color: var(--text-color);
     text-decoration: none;
+    color: var(--text-color);
     margin-top: 32px;
     font-size: 14px;
     line-height: 16px;
@@ -239,7 +261,6 @@ select:-webkit-autofill:focus {
 .hero__text {
     margin-top: 0;
     margin-bottom: 36px;
-    color: var(--text-color);
     letter-spacing: -0.28125px;
 }
 
@@ -251,4 +272,81 @@ select:-webkit-autofill:focus {
     height: 960px;
     flex-shrink: 0;
     object-fit: contain;
+}
+
+
+/* INFORMATION */
+.information-wrapper {
+    margin-top: -96px;
+    padding-top: 96px;
+    padding-bottom: 94px;
+    background-color: var(--information-color);
+}
+
+.question {
+    width: 100%;
+    max-width: 635px;
+    margin-bottom: 184px;
+}
+
+.question__title {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: var(--title-color);
+    letter-spacing: -0.714286px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 64px;
+}
+
+.question__text {
+    margin: 0;
+    letter-spacing: -0.28125px;
+}
+
+.information__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    margin-right: -30px;
+    list-style: none;
+}
+
+.information__item {
+    position: relative;
+    margin-right: 30px;
+}
+
+.information__item--inner {
+    position: absolute;
+    top: -117px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.information__title {
+    margin-top: 0;
+    margin-bottom: 26px;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.428571px;
+    color: var(--title-color);
+}
+
+.information__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
 }
