@@ -400,6 +400,7 @@ select:-webkit-autofill:focus {
 
 .articles__text-top {
     display: inline-block;
+    font-weight: 400;
     margin-top: 0;
     margin-bottom: 8px;
     font-size: 10px;
@@ -455,7 +456,8 @@ select:-webkit-autofill:focus {
 }
 
 .site-footer__icon {
-    margin-bottom: 47px;
+    display: flex;
+    margin-bottom: 55px;
     cursor: pointer;
     transition: opacity .3s ease;
 }
@@ -466,6 +468,13 @@ select:-webkit-autofill:focus {
 
 .site-footer__icon:active {
     opacity: 0.6;
+}
+
+.site-footer__img {
+    display: inline-block;
+    width: 139px;
+    height: 20px;
+    object-fit: contain;
 }
 
 .social-networks {
