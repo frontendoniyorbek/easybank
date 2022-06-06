@@ -112,10 +112,9 @@ select:-webkit-autofill:focus {
     font-weight: 500;
     font-size: 14px;
     line-height: 28px;
-    font-size: normal;
+    font-style: normal;
     color: #fff;
     border-radius: 22px;
-    word-spacing: nowrap;
     background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
     transition: opacity .3s ease;
 }
@@ -199,7 +198,6 @@ select:-webkit-autofill:focus {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    word-spacing: nowrap;
     text-decoration: none;
     color: var(--text-color);
     margin-top: 32px;
@@ -317,7 +315,7 @@ select:-webkit-autofill:focus {
     margin-right: 30px;
 }
 
-.information__item--inner {
+.information__item-inner {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -553,5 +551,4 @@ select:-webkit-autofill:focus {
     letter-spacing: -0.234375px;
     font-size: 15px;
     line-height: 26px;
-    color: rgba(45, 49, 77, 0,5);
 }
