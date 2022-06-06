@@ -228,7 +228,7 @@ select:-webkit-autofill:focus {
 .hero {
     background-image: url(../img/hero-bg-desktop.svg);
     background-repeat: no-repeat;
-    background-position: calc(50% + 595px) calc(50% + -88px);
+    background-position: calc(50% + 595px) calc(50% + -40px);
     background-color: #fafafa;
 }
 
@@ -445,12 +445,13 @@ select:-webkit-autofill:focus {
 
 .site-footer__container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .site-footer__icon-wrapper {
     display: flex;
     flex-direction: column;
+    margin-right: 132px;
 }
 
 .site-footer__icon {
@@ -494,9 +495,15 @@ select:-webkit-autofill:focus {
 .site-footer__list {
     display: flex;
     flex-direction: column;
+    max-width: 160px;
+    width: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+.site-footer__list:not(:last-child) {
+    margin-right: 30px;
 }
 
 .site-footer__item:not(:last-child) {
@@ -504,6 +511,9 @@ select:-webkit-autofill:focus {
 }
 
 .site-footer__link {
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -0.234375px;
     text-decoration: none;
     color: #fff;
     transition: color .3s ease, opacity .3s ease;
@@ -521,6 +531,7 @@ select:-webkit-autofill:focus {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+    margin-left: 220px;
 }
 
 .site-footer__button {
