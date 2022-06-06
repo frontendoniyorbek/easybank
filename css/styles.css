@@ -241,7 +241,7 @@ select:-webkit-autofill:focus {
     width: 100%;
     max-width: 447px;
     padding-top: 170px;
-    padding-bottom: 266px;
+    padding-bottom: 170px;
 }
 
 .hero__title {
@@ -273,7 +273,6 @@ select:-webkit-autofill:focus {
 
 /* INFORMATION */
 .information-wrapper {
-    margin-top: -96px;
     padding-top: 96px;
     padding-bottom: 94px;
     background-color: var(--information-color);
@@ -282,7 +281,7 @@ select:-webkit-autofill:focus {
 .question {
     width: 100%;
     max-width: 635px;
-    margin-bottom: 184px;
+    margin-bottom: 72px;
 }
 
 .question__title {
@@ -313,19 +312,16 @@ select:-webkit-autofill:focus {
 }
 
 .information__item {
-    position: relative;
     max-width: 255px;
     width: 100%;
     margin-right: 30px;
 }
 
 .information__item--inner {
-    position: absolute;
-    top: -117px;
-    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 40px;
     background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
     width: 72px;
     height: 72px;
