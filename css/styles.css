@@ -319,10 +319,11 @@ select:-webkit-autofill:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     margin-right: -30px;
+    margin-bottom: -80px;
     list-style: none;
 }
 
@@ -330,6 +331,7 @@ select:-webkit-autofill:focus {
     max-width: 255px;
     width: 100%;
     margin-right: 30px;
+    margin-bottom: 80px;
 }
 
 .information__item-inner {
